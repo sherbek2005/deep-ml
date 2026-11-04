@@ -7,5 +7,5 @@ def flatten_then_reshape(x: torch.Tensor, new_shape) -> torch.Tensor:
 
 def transpose_last_two(x: torch.Tensor) -> torch.Tensor:
     # TODO: swap the last two dimensions of x
-    return torch.transpose(x,-1,-2)
+    return x.mT
 
