@@ -11,4 +11,4 @@ def transform_matrix(A, T, S) -> torch.Tensor:
         return torch.tensor([[-1,-1],[-1,-1]])
 
     T_inverse = torch.linalg.inv(T)
-    return T_inverse @ torch.tensor(A)
+    return T_inverse @ torch.tensor(A) @ S
